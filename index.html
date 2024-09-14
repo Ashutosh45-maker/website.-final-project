@@ -21,6 +21,54 @@
         background-color: rgb(234, 223, 9);
         color: red;
     }
+
+    #demo1{
+        animation: webanimations 3s ease 0s 5 normal forwards;
+
+    }
+    @keyframes webanimations {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
 </style>
 
 </head>
@@ -36,13 +84,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
+                        <a class="nav-link" href="#about us">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">OUR MEALS</a>
+                        <a class="nav-link" href="#our meals">OUR MEALS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACT US</a>
@@ -86,10 +134,71 @@
         </button>
     </div>
 
-    <div class="container p-5 m-5 text-center">
-        <h1>MCDonalds</h1>
+    <div id="home" class="container p-5 m-5 text-center">
+        <h1 >MCDonalds</h1>
     </div>
     <img src="logo.png" width="100%" height="750px">
+
+
+    <h1 id="about us" class="container my-5 p-5 text-center display-1">ABOUT US</h1>
+    <div>
+
+    </div>
+
+    <div class="container p-5 my-5">
+     <div class="row text-center">
+        <div class="col-sm-6">
+            <img src="img 5.jpeg" height="300px"  width="350px" alt=""  id="demo1">
+        </div>
+        <div class="col-sm-6">
+            <p>McDonald's Corporation, doing business as McDonald's, is an American multinational fast food chain, founded in 1940 as a
+            restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened
+            their business as a hamburger stand and later turned the company into a franchise, with the Golden Arches logo being
+            introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc, a businessman, joined the company as a
+            franchise agent and, in 1961, bought out the McDonald brothers. Previously headquartered in Oak Brook, Illinois, it
+            moved to nearby Chicago in June 2018.[9][10][11][12] McDonald's is also a real estate company through its ownership of
+            around 70% of restaurant buildings and 45% of the underlying land (which it leases to its franchisees).[13][14]</p>
+            
+        </div>
+
+     </div >
+    </div>
+  
+
+    <h1 id="our meals" class="container my-5 p-5 text-center display-1">OUR MEALS</h1>
+    <div class="container p-5 my-5 bg-danger">
+        <div class="d-flex justify-content-evenly">
+      
+            <div class="card" style="width: 18rem;">
+                <img src="card 1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="card 2.avif" class="card-img-top" alt="..." height="250px">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="card 3.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
